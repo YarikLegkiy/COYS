@@ -34,7 +34,7 @@ header {
   a {
     display: block;
     position: relative;
-    @include fontstyles(.8rem, 300, 1.75, $dark-gray);
+    @include fontstyles(.8rem, 300, 1.2, $dark-gray);
     text-transform: uppercase;
     text-decoration: none;
 
