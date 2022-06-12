@@ -1,0 +1,19 @@
+h1 {
+  @include fontstyles(4.26rem, 800, 1.34, $dark-gray);
+}
+
+h2 {
+  @include fontstyles(3.2rem, 300, 1.25, $dark-gray);
+}
+
+h3 {
+  @include fontstyles(2.13rem, 300, 1.25, $dark-gray);
+}
+
+h4 {
+  @include fontstyles(1.6rem, 300, 1.5, $dark-gray);
+}
+
+h5 {
+  @include fontstyles(1.2rem, 300, 1.66, $dark-gray);
+}

@@ -1,0 +1,14 @@
+.text-first {
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(1.06rem, 300, 1.5, $dark-gray);
+}
+
+.text-second {
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(1.13rem, 300, 1.41, $dark-gray);
+}
+
+.sub-text {
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(.93rem, 300, 1.29, $dark-gray);
+}

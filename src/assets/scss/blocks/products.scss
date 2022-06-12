@@ -1,0 +1,27 @@
+.products {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.products__cards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.products__card {
+  position: relative;
+  display: block;
+
+  h3 {
+    position: absolute;
+    left: 50%;
+    top: 2rem;
+    transform: translateX(-50%);
+
+    @include fontstyles(2rem, 300, 2, $black);
+    letter-spacing: .5rem;
+  }
+}

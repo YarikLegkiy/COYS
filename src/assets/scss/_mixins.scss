@@ -1,0 +1,13 @@
+@mixin breakpoint($bp) {
+    @media screen and (max-width: $bp) {
+        @content;
+    }
+}
+
+/* Font styles */
+@mixin fontstyles($fs, $fw, $lh, $color) {
+  font-size: $fs;
+  font-weight: $fw;
+  line-height: $lh;
+  color: $color;
+} 

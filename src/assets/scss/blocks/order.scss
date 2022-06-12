@@ -1,0 +1,29 @@
+.order {
+  padding: 6.66rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.order__title {
+  padding-bottom: .86rem;
+  margin-bottom: 3.53rem;
+  width: 100%;
+  color: $black;
+  border-bottom: 1px solid $black;
+}
+
+.order__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.order__bottom--text {
+  @include fontstyles(1.2rem, 300, 1.67, $black);
+}
+
+.order__label {
+  @include fontstyles(1.13rem, 300, 1.67, $black);
+}

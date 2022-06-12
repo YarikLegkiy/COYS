@@ -1,0 +1,124 @@
+.btn-primary, .btn-secondary {
+  padding: 0 1.5rem;
+  height: 48px;
+  cursor: pointer;
+
+  font-family: inherit;
+  @include fontstyles(.93rem, 300, 1.29, $white);
+  letter-spacing: .3rem;
+  text-transform: uppercase;
+
+
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+}
+
+.btn-primary {
+  border: 1px solid $dark-gray;
+  background: $dark-gray;
+
+  &:active {
+    border: 1px solid #46474A;
+    background: #46474A;
+  }
+
+  &:hover {
+    border: 1px solid #74767B;
+    background: #74767B;
+  }
+
+  &:disabled {
+    border: 1px solid $light-gray;
+    color: $dark-gray;
+    background: $light-gray;
+  }
+}
+
+.btn-secondary {
+  border: 1px solid $beige;
+  color: $dark-gray;
+  background: $beige;
+
+  &:active {
+    border: 1px solid $dark-beige;
+    background: $dark-beige;
+  }
+
+  &:hover {
+    border: 1px solid #E4C5AD;
+    background: #E4C5AD;
+  }
+
+  &:disabled {
+    border: 1px solid $light-gray;
+    background: $light-gray;
+  }
+}
+
+.btn-m {
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+
+  font-family: inherit;
+  @include fontstyles(.93rem, 300, 1.29, $dark-gray);
+  text-transform: uppercase;
+
+  border: 1px solid $light-gray;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+  background: $light-gray;
+
+  &:hover {
+    border: 1px solid #E4C5AD;
+    background: #E4C5AD;
+  }
+
+  &:active {
+    border: 1px solid #F0DED0;
+    background: #F0DED0;
+  }
+
+  &:disabled {
+    border: 1px solid #D5CFC5;
+    background: $white;
+  }
+}
+
+.btn-basket {
+  padding: 1rem 1.2rem;
+  width: 100%;
+  max-width: 247px;
+  height: 48px;
+  cursor: pointer;
+
+  font-family: inherit;
+  @include fontstyles(.93rem, 300, 1.29, $white);
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+
+  border: 1px solid $dark-gray;
+  transition: background .2s ease-in-out, border .2s ease-in-out;
+  background: $dark-gray;
+
+  &:hover {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid #74767B;
+    background: #74767B;
+  }
+
+  &:hover img {
+    display: block;
+  }
+
+  &:disabled {
+    border: 1px solid $light-gray;
+    color: $dark-gray;
+    background: $light-gray;
+  }
+}
+
+.btn-basket img {
+  display: none;
+}

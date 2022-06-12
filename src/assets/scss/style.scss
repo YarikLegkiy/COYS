@@ -1,0 +1,46 @@
+@import '_vars';
+@import '_mixins';
+@import 'normalize';
+
+html {
+    font-size: 15px;
+}
+
+
+body {
+    position: relative;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+
+    background-color: #F9F8F6;
+}
+
+.wrapper {
+    padding: 0 1rem;
+
+    width: 100%;
+    max-width: 1440px;
+}
+
+:active, :hover, :focus {
+    outline: 0;
+    outline-offset: 0;
+}
+
+/* Blocks */
+@import "./blocks/htags";
+@import "./blocks/ptags";
+@import "./blocks/links";
+@import "./blocks/btn";
+@import "./blocks/inputs";
+@import "./blocks/selects";
+@import "./blocks/products";
+
+@import "./blocks/header";
+@import "./blocks/top-slider";
+@import "./blocks/intro-category";
+@import "./blocks/order";
+@import "./blocks/footer";
+
+@import "./blocks/slick";
+@import "./blocks/slick-theme";

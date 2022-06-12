@@ -1,0 +1,55 @@
+.link {
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(1.13rem, 300, 1.17, $dark-beige);
+
+  &:active {
+    color: $dark-beige;
+  }
+
+  &:hover {
+    color: $dark-gray;
+  }
+
+  &:disabled {
+    color: $light-gray;
+  }
+}
+
+.btn-link-wide {
+  @include fontstyles(1.13rem, 300, 1.17, $dark-beige);
+  text-transform: uppercase;
+  letter-spacing: .3rem;
+  text-decoration: none;
+
+  &:active {
+    color: $dark-beige;
+  }
+
+  &:hover {
+    color: $dark-gray;
+    text-decoration: underline;
+  }
+
+  &:disabled {
+    color: $light-gray;
+  }
+}
+
+.btn-link {
+  @include fontstyles(1.13rem, 300, 1.17, $dark-beige);
+  text-transform: uppercase;
+  letter-spacing: .15rem;
+  text-decoration: none;
+
+  &:active {
+    color: $dark-beige;
+  }
+
+  &:hover {
+    color: $dark-gray;
+  }
+
+  &:disabled {
+    color: $light-gray;
+  }
+}
