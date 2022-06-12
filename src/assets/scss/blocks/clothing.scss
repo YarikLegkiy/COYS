@@ -1,0 +1,23 @@
+.clothing {
+  margin-top: 2rem;
+  padding-left: 1rem;
+}
+
+.clothing__cards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 2rem;
+  row-gap: 2rem;
+}
+
+.clothing__card--desc {
+  padding: 2rem 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
