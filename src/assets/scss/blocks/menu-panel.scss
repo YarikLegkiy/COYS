@@ -99,6 +99,27 @@
   row-gap: 1.2rem;
 }
 
+.menu-panel__color--link {
+  width: 12px;
+  height: 12px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  border: 1px solid $white;
+  transition: border .2s ease-in-out;
+
+  &:hover {
+    border: 1px solid $black;
+  }
+}
+
+.menu-panel__color--link.active {
+  border: 1px solid $black;
+}
+
 .menu-panel__sizes {
   padding: 1.6rem 0;
   width: 100%;
