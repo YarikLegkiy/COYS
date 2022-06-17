@@ -42,6 +42,8 @@ body {
     outline-offset: 0;
 }
 
+.show {display:block;}
+
 /* Blocks */
 @import "./blocks/htags";
 @import "./blocks/ptags";
@@ -59,6 +61,7 @@ body {
 
 @import "./blocks/menu-panel";
 @import "./blocks/clothing";
+@import "./blocks/product";
 
 @import "./blocks/slick";
 @import "./blocks/slick-theme";

@@ -12,6 +12,13 @@
   row-gap: 2rem;
 }
 
+.clothing__card--link {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
 .clothing__card--desc {
   padding: 2rem 0;
   width: 100%;

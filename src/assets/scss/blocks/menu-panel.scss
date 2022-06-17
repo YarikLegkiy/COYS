@@ -36,6 +36,12 @@
   border-bottom: 1px solid $dark-gray;
 }
 
+.menu-panel__select--close {
+  img {
+    transform: rotate(45deg);
+  }
+}
+
 .menu-panel__category--link, .menu-panel__select--link {
   padding: 9px 0;
   width: 100%;

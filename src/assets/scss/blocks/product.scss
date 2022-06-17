@@ -1,0 +1,136 @@
+.images-product__content {
+  width: 100%;
+}
+
+.images-product__link-back {
+  margin-bottom: 1rem;
+  max-width: 105px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  text-decoration: none;
+}
+
+.images-product__link--text {
+  position: relative;
+  @include fontstyles(.8rem, 300, 1.29, $dark-gray);
+  letter-spacing: .2rem;
+  text-transform: uppercase;
+
+  &:after {
+    position: absolute;
+    display: block;
+    content: '';
+    right: 0;
+    bottom: -1px;
+
+    width: 0;
+    height: 1px;
+
+    background: $dark-gray;
+    transition: width .2s ease-in-out;
+  }
+
+  &:hover {
+    &:after {
+      width: 100%;
+    }
+  }
+}
+
+.images-product__photos {
+  width: 100%;
+  max-width: 1045px;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 22px;
+}
+
+.product-menu {
+  padding-top: 6.26rem;
+  width: 100%;
+  max-width: 332px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.product-menu__title {
+  width: 100%;
+
+  @include fontstyles(1.6rem, 300, 1.29, $dark-gray);
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.product__line {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1px;
+  display: block;
+  content: '';
+
+  background: $dark-gray;
+}
+
+.product-menu__desc {
+  margin-top: 1.08rem;
+
+  font-family: "Roboto Condensed", sans-serif;
+  @include fontstyles(1.13rem, 300, 1.4, $dark-gray);
+  text-align: center;
+}
+
+.product-menu__map-size {
+  margin-bottom: 2.6rem;
+}
+
+.product-menu__btn {
+  margin-bottom: 2.6rem;
+}
+
+.product-menu__label {
+  margin: 1rem 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  @include fontstyles(1.13rem, 300, 1.4, $black);
+  text-align: center;
+}
+
+.product-menu__select-decs {
+  display: none;
+  margin: 1rem 0;
+
+  font-family: "Roboto Condensed", sans-serif;
+  @include fontstyles(1.13rem, 300, 1.4, $dark-gray);
+  text-align: center;
+}
+
+.product-like {
+  margin-top: 6.23rem;
+}
+
+.product-like__cards {
+  padding: 2rem 0;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 22px;
+}
+
+.product-like__card {
+  padding: 0 .5rem;
+}
+
+.product-like__title {
+  @include fontstyles(2.13rem, 300, 1.1, $dark-gray);
+  text-transform: uppercase;
+  text-align: center;
+}
