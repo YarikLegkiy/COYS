@@ -5,25 +5,29 @@
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
+}
 
-  .label, .input-text {
-    width: 100%;
-    max-width: 309px;
-    font-family: 'Roboto Condensed', sans-serif;
-    @include fontstyles(1.067rem, 300, 1.5, $dark-gray);
-  }
+.label, .input-text {
+  max-width: 309px;
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(1.067rem, 300, 1.5, $dark-gray);
+}
 
-  .input-text {
-    padding: 0 .7rem;
-    height: 46px;
+.label {
+  margin-top: 1rem;
+  margin-bottom: .5rem;
+}
+
+.input-text {
+  padding: 0 .7rem;
+  height: 46px;
+  color: $dark-beige;
+
+  border: 1px solid #DFDBD4;
+  background: $white;
+
+  &::placeholder {
     color: $dark-beige;
-
-    border: 1px solid #DFDBD4;
-    background: $white;
-
-    &::placeholder {
-      color: $dark-beige;
-    }
   }
 }
 
@@ -50,4 +54,22 @@
 .input-buy {
   padding: 0.8rem 1.5rem;
   height: 48px;
+}
+
+.input-textarea {
+  padding: .7rem;
+  display: block;
+  width: 100%;
+  min-height: 114px;
+  box-sizing: border-box;
+
+  font-family: "Roboto Condensed", sans-serif;
+  @include fontstyles(1.06rem, 300, 1.5, #D3A785);
+  border: 1px solid #DFDBD4;
+  background: #ffffff;
+  resize: none;
+
+  &::placeholder {
+    color: #D3A785;
+  }
 }

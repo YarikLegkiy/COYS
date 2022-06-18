@@ -1,0 +1,38 @@
+.check__items {
+  width: 100%;
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.check__item {
+  margin: 1rem 0;
+  padding: 1rem 1.13rem;
+  width: 100%;
+  max-width: 208px;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  border: 1px solid #DFDBD4;
+  border-radius: 5px;
+}
+
+.check__radio {
+  margin: 0;
+  padding: .5rem;
+}
+
+.check__item--text {
+  margin-left: .5rem;
+  font-family: "Roboto Condensed", sans-serif;
+  @include fontstyles(1.06rem, 300, 1, $dark-gray);
+}
+
+.check__item--desc {
+  @include fontstyles(1.06rem, 300, 1, #C18562);
+}

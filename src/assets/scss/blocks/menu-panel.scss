@@ -12,7 +12,10 @@
 }
 
 .menu-logo {
+  margin-top: 4rem;
+
   text-align: center;
+
   img {
     max-width: 40px;
     height: auto;
@@ -34,12 +37,6 @@
 
   text-align: center;
   border-bottom: 1px solid $dark-gray;
-}
-
-.menu-panel__select--close {
-  img {
-    transform: rotate(45deg);
-  }
 }
 
 .menu-panel__category--link, .menu-panel__select--link {
@@ -69,6 +66,7 @@
 }
 
 .menu-panel__brands {
+  display: none;
   padding: 9px 0;
 }
 
@@ -79,6 +77,25 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  img {
+    transition: transform .2s ease-in-out;
+    transform: rotate(180deg);
+  }
+}
+
+#menu-panel__select1.active, #menu-panel__select2.active, #menu-panel__select3.active {
+  img {
+    transition: transform .2s ease-in-out;
+    transform: rotate(0);
+  }
+}
+
+#menu-panel__select4.active, #menu-panel__select5.active, #menu-panel__select6.active {
+  img {
+    transition: transform .2s ease-in-out;
+    transform: rotate(45deg);
+  }
 }
 
 .menu-panel__brand {
@@ -95,6 +112,11 @@
   @include fontstyles(1.06rem, 300, 1.29, $dark-gray);
   text-decoration: none;
   transition: background .2s ease-in-out;
+}
+
+.menu-panel__colors--wrapper {
+  width: 100%;
+  display: none;
 }
 
 .menu-panel__colors {
@@ -124,6 +146,11 @@
 
 .menu-panel__color--link.active {
   border: 1px solid $black;
+}
+
+.menu-panel__sizes--wrapper {
+  width: 100%;
+  display: none;
 }
 
 .menu-panel__sizes {
