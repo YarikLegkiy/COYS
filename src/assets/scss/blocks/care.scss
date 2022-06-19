@@ -1,5 +1,6 @@
 .care {
   width: 100%;
+
   display: flex;
   justify-content: center;
 }
@@ -8,9 +9,69 @@
   padding: 0 7.86rem;
 }
 
+.care__title {
+  margin-bottom: 3rem;
+}
+
 .care__cards {
   width: 100%;
 
   display: flex;
   justify-content: space-between;
+}
+
+.care__cards--left {
+  width: 30%;
+
+  p {
+    font-family: "Roboto Condensed", sans-serif;
+    @include fontstyles(1.06rem, 300, 1.5, $dark-gray);
+  }
+}
+
+.care__left--title {
+  margin-top: 1rem;
+  margin-bottom: 1.5rem;
+
+  @include fontstyles(1.6rem, 300, 1.5, $dark-gray);
+  text-transform: uppercase;
+}
+
+.care__cards--right {
+  width: 60%;
+
+  p {
+    display: none;
+
+    font-family: "Roboto Condensed", sans-serif;
+    @include fontstyles(1.06rem, 300, 1.5, $dark-gray);
+  }
+}
+
+.care__right--selects {
+  display: flex;
+  flex-direction: column;
+}
+
+.care__select--top {
+  margin-bottom: 2rem;
+  padding: 1rem 0;
+  width: 100%;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  border-bottom: 1px solid $dark-gray;
+
+  a {
+    display: block;
+    @include fontstyles(1.6rem, 300, 1.5, $dark-gray);
+    text-decoration: none;
+  }
+
+  img {
+    transition: transform .2s ease-in-out;
+  }
 }

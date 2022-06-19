@@ -91,7 +91,10 @@
   }
 }
 
-#menu-panel__select4.active, #menu-panel__select5.active, #menu-panel__select6.active {
+#menu-panel__select4.active, #menu-panel__select5.active, #menu-panel__select6.active,
+#menu-panel__select7.active, #menu-panel__select8.active, #menu-panel__select9.active,
+#menu-panel__select10.active, #menu-panel__select11.active, #menu-panel__select12.active,
+#menu-panel__select13.active {
   img {
     transition: transform .2s ease-in-out;
     transform: rotate(45deg);
