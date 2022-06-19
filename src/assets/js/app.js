@@ -210,3 +210,25 @@ $(function () {
         $('#menu-panel__select6').toggleClass('active');
     });
 });
+
+// onClick active
+$(document).ready(function() {
+    $(".menu-panel__color--link").click(function () {
+        $(".menu-panel__color--link").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
+$(document).ready(function() {
+    $(".btn-m").click(function () {
+        $(".btn-m").removeClass("active");
+        $(this).addClass("active");
+    });
+});
+
+$(document).ready(function() {
+    $(".clothing__card--color a").click(function () {
+        $(".clothing__card--color a").removeClass("active");
+        $(this).addClass("active");
+    });
+});

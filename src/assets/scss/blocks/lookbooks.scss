@@ -1,0 +1,97 @@
+.lookbooks {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.lookbooks__cards {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  background: #F0DED0;
+}
+
+.lookbooks__cards--second {
+  grid-auto-flow: dense;
+  direction: rtl;
+
+  background: $white;
+}
+
+.lookbooks__card--first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lookbooks__card--content-first {
+  padding: 2rem;
+
+  border: 2px solid $white;
+}
+
+.lookbooks__card--content-second {
+  border: 2px solid #F0DED0;
+}
+
+.lookbooks__card--wrapper-first {
+  position: relative;
+  width: 410px;
+  height: 510px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: $white;
+
+  h2 {
+    max-width: 300px;
+
+    @include fontstyles(2.13rem, 300, 1.25, $dark-gray);
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+
+    text-align: center;
+  }
+
+  a {
+    position: absolute;
+    display: block;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 6rem;
+
+    @include fontstyles(1.2rem, 300, 1.29, $dark-gray);
+    letter-spacing: .3rem;
+    text-transform: uppercase;
+    text-decoration: none;
+
+    &:after {
+      position: absolute;
+      display: block;
+      content: '';
+      left: 0;
+      bottom: -2px;
+
+      width: 0;
+      height: 1px;
+
+      background: $dark-gray;
+      transition: width .2s ease-in-out;
+    }
+
+    &:hover {
+      &:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.lookbooks__card--wrapper-second {
+  background: #F0DED0;
+}

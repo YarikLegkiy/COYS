@@ -1,0 +1,59 @@
+.about {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.about__header {
+  margin-top: 1.5rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.about__header--title {
+  @include fontstyles(1.6rem, 300, 1.5, $dark-gray);
+  letter-spacing: .1rem;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about__cards {
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.about__card {
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.about__card--content {
+  padding: 0 4rem;
+
+  h4 {
+    margin-bottom: 2rem;
+
+    @include fontstyles(1.6rem, 300, 1.5, $dark-gray);
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+  }
+
+  p {
+    margin-bottom: 1rem;
+
+    font-family: "Roboto Condensed", sans-serif;
+    @include fontstyles(1.06rem, 300, 1.67, $dark-gray);
+  }
+
+  img {
+    margin-bottom: 2rem;
+  }
+}

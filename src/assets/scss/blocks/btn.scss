@@ -77,15 +77,15 @@
     background: #E4C5AD;
   }
 
-  &:active {
-    border: 1px solid #F0DED0;
-    background: #F0DED0;
-  }
-
   &:disabled {
     border: 1px solid #D5CFC5;
     background: $white;
   }
+}
+
+.btn-m.active {
+  border: 1px solid #F0DED0;
+  background: #F0DED0;
 }
 
 .btn-basket {

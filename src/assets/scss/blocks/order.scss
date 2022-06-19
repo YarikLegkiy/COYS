@@ -28,6 +28,10 @@
   @include fontstyles(1.13rem, 300, 1.67, $black);
 }
 
+.order__form {
+  margin-bottom: 5.33rem;
+}
+
 .order-left {
   width: 55%;
 }
@@ -127,4 +131,16 @@
   input {
     width: 100%;
   }
+}
+
+.order-left__abroad--list {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.order-left__abroad--item {
+  width: 100%;
+  max-width: 309px;
 }
