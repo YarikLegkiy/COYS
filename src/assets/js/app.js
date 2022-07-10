@@ -101,6 +101,15 @@ $('.product-like__cards').slick({
     slidesToScroll: 2,
 });
 
+$('.gallery__slider').slick({
+    autoplay: true,
+    autoplaySpeed: 2000,
+    dots: true,
+    arrows: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+});
+
 // category links masks
 $(document).ready((function () {
     $('#intCatLink1').hover(function () {

@@ -1,0 +1,41 @@
+.error {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.error__content {
+  padding: 8rem 0;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.error__title {
+  margin-top: 2rem;
+
+  @include fontstyles(2.13rem, 300, 1.25, $dark-gray);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.error__subtitle {
+  margin-top: 1rem;
+
+  font-family: "Roboto Condensed", sans-serif;
+  @include fontstyles(1.06rem, 300, 1.5, $dark-gray);
+}
+
+.error__btn {
+  margin-top: 3.2rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-decoration: none;
+}
