@@ -1,0 +1,54 @@
+.profile {
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+}
+
+.profile__title {
+  @include fontstyles(3.2rem, 300, 1.25, $dark-gray);
+  text-transform: uppercase;
+  letter-spacing: .1rem;
+}
+
+.profile__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.profile__left {
+  width: 35%;
+}
+
+.profile__right {
+  margin-top: 2rem;
+  width: 60%;
+}
+
+.personal__data-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.profile-btn {
+  margin: 2rem 0;
+  width: 200px;
+}
+
+.personal__data-form--wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.personal__address-form--selects {
+  display: flex;
+  justify-content: space-between;
+}
+
+.personal__address-from__select {
+  width: 100%;
+}
+
+.personal__address-from--mb {
+  margin-bottom: 0;
+}
