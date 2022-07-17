@@ -290,3 +290,33 @@ $(document).ready(function() {
         $(this).addClass("active");
     });
 });
+
+$(document).ready(function() {
+    $("#menu-panel__category--link1").click(function () {
+        $(".menu-panel__category--link").removeClass("active");
+        $(".personal__data").show(300);
+        $(".personal__address").slideUp(300);
+        $(".personal__history").slideUp(300);
+        $(this).addClass("active");
+    });
+});
+
+$(document).ready(function() {
+    $("#menu-panel__category--link2").click(function () {
+        $(".menu-panel__category--link").removeClass("active");
+        $(".personal__address").show(300);
+        $(".personal__data").slideUp(300);
+        $(".personal__history").slideUp(300);
+        $(this).addClass("active");
+    });
+});
+
+$(document).ready(function() {
+    $("#menu-panel__category--link3").click(function () {
+        $(".menu-panel__category--link").removeClass("active");
+        $(".personal__history").show(300);
+        $(".personal__address").slideUp(300);
+        $(".personal__data").slideUp(300);
+        $(this).addClass("active");
+    });
+});

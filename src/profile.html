@@ -19,13 +19,13 @@ title: COYS | Profile
                     <div class="menu-panel__content">
                         <ul class="menu-panel__categories">
                             <li class="menu-panel__category">
-                                <a href="#!" class="menu-panel__category--link active">Персональні дані</a>
+                                <a href="#!" class="menu-panel__category--link" id="menu-panel__category--link1">Персональні дані</a>
                             </li>
                             <li class="menu-panel__category">
-                                <a href="#!" class="menu-panel__category--link">Мої адреси доставки</a>
+                                <a href="#!" class="menu-panel__category--link" id="menu-panel__category--link2">Мої адреси доставки</a>
                             </li>
                             <li class="menu-panel__category">
-                                <a href="#!" class="menu-panel__category--link">Історія замовлень</a>
+                                <a href="#!" class="menu-panel__category--link" id="menu-panel__category--link3">Історія замовлень</a>
                             </li>
                         </ul>
                     </div>
@@ -108,9 +108,64 @@ title: COYS | Profile
                         </form>
                     </div>
                     <div class="personal__history">
-                        <form action="" class="personal__history-form">
-                            3
-                        </form>
+                        <div class="personal__history--content">
+                            <div class="personal__history--date">
+                                <time datetime="2022-06-17 13:21">17.07.2022</time>
+                                <h5>Виконано</h5>
+                            </div>
+                            <div class="personal__history--wrapper">
+                                <div class="personal__history--order">
+                                    <div class="personal__history--left">
+                                        <img src="./assets/images/personal1.png" alt="Personal1">
+                                        <a href="#!">Блакитне плаття в дрібну клітинку</a>
+                                    </div>
+                                    <div class="personal__history--right">
+                                        <h5 class="personal__history--size">M</h5>
+                                        <h5 class="personal__history--num">1</h5>
+                                        <h5 class="personal__history--sell">1000 грн</h5>
+                                    </div>
+                                </div>
+                                <div class="personal__history--order">
+                                    <div class="personal__history--left">
+                                        <img src="./assets/images/personal1.png" alt="Personal1">
+                                        <a href="#!">Блакитне плаття в дрібну клітинку</a>
+                                    </div>
+                                    <div class="personal__history--right">
+                                        <h5 class="personal__history--size">M</h5>
+                                        <h5 class="personal__history--num">1</h5>
+                                        <h5 class="personal__history--sell">1000 грн</h5>
+                                    </div>
+                                </div>
+                                <div class="personal__history--total">
+                                    <h5 class="personal__history--total-text">Загалом:</h5>
+                                    <h5 class="personal__history--total-num">2000 грн</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="personal__history--content">
+                            <div class="personal__history--date">
+                                <time datetime="2022-06-17 13:21">17.07.2022</time>
+                                <h5>Скасовано</h5>
+                            </div>
+                            <div class="personal__history--wrapper">
+                                <div class="personal__history--order">
+                                    <div class="personal__history--left">
+                                        <img src="./assets/images/personal1.png" alt="Personal1">
+                                        <a href="#!">Блакитне плаття в дрібну клітинку</a>
+                                    </div>
+                                    <div class="personal__history--right">
+                                        <h5 class="personal__history--size">M</h5>
+                                        <h5 class="personal__history--num">1</h5>
+                                        <h5 class="personal__history--sell">1000 грн</h5>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="btn-secondary personal__history--btn">Показати більше</button>
+                        <div class="personal__history--nothing" style="display: none">
+                            <img src="./assets/images/svg/about-logo.svg" alt="logo">
+                            <h3>Замовлень не знайдено</h3>
+                        </div>
                     </div>
                 </div>
             </div>
