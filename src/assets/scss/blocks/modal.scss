@@ -1,0 +1,174 @@
+.modal {
+  position: absolute;
+  left: 0;
+  top: 0;
+
+  width: 100%;
+  height: 100vh;
+  z-index: 1001;
+}
+
+.modal__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal__content {
+  padding: 3rem 3.66rem 6.33rem 3.66rem;
+  max-width: 493px;
+
+  border-radius: 5px;
+  background: #F9F8F6;
+}
+
+.modal__cross {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.modal__cross--lines {
+  width: 15px;
+  height: 20px;
+  position: relative;
+  cursor: pointer;
+}
+
+.modal__cross--line {
+  display: block;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 50%;
+  width: 15px;
+  height: 1px;
+  transform: rotate(45deg);
+
+  border-radius: 1px;
+  background: $dark-gray;
+}
+
+.modal__cross--line:last-of-type {
+  transform: rotate(135deg);
+}
+
+.modal__center {
+  max-width: 382px;
+}
+
+.modal-sing-in__title {
+  max-width: 382px;
+  margin: .8rem 0;
+  @include fontstyles(3.2rem, 300, 1.25, $dark-gray);
+  text-align: center;
+}
+
+.modal-sing-in__subtitle {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+
+  p {
+    font-family: "Roboto Condensed", sans-serif;
+    @include fontstyles(1.13rem, 300, 1.41, $dark-gray);
+  }
+
+  a {
+    margin-left: .5rem;
+    font-family: "Roboto Condensed", sans-serif;
+    @include fontstyles(1.13rem, 300, 1.41, $dark-beige);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.modal-sing-in__form--inputs {
+  margin-bottom: 2.53rem;
+
+  width: 382px;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal__input {
+  padding: 0 .7rem;
+  width: 100%;
+  height: 46px;
+  color: $dark-beige;
+  box-sizing: border-box;
+
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(1.067rem, 300, 1.5, $dark-gray);
+
+  border: 1px solid #DFDBD4;
+  background: $white;
+
+  &::placeholder {
+    color: $dark-beige;
+  }
+}
+
+.modal-sing-in__form--bottom {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modal-sing-in__form--check {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+
+  h5 {
+    font-family: 'Roboto Condensed', sans-serif;
+    @include fontstyles(1.067rem, 300, 1.5, $dark-gray);
+  }
+}
+
+.modal-sing-in__link {
+  font-family: 'Roboto Condensed', sans-serif;
+  @include fontstyles(1.067rem, 300, 1.5, $dark-beige);
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.modal-sing-in__submit {
+  margin-top: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.forgot-password__subtitle {
+  text-align: center;
+}
+
+.modal-forgot-password__back {
+  text-align: center;
+
+  a {
+    font-family: 'Roboto Condensed', sans-serif;
+    @include fontstyles(1.067rem, 300, 1.5, $dark-beige);
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.reset-password-back {
+  margin-top: 2rem;
+}
